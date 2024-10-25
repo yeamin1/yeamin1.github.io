@@ -11,7 +11,8 @@
 <li><p><code>npm hexo s</code> create localhost webpage</p></li>
 <li><p><code>pnpm hexo clean ; pnpm hexo deploy</code> Deployment</p>
 <ul>
-<li>github.io： Change <em>url:</em> in &quot;*/_config.yml&quot; to: https://yeamin1.github.io</li>
+<li>github.io： Change <em>url:</em> in &quot;*/_config.yml&quot; to: https://yeamin1.github.io<br />
+</li>
 </ul></li>
 </ul>
 <h2 id="resource">Resource:</h2>
@@ -19,12 +20,19 @@
 <li><p><span class="exturl" data-url="aHR0cHM6Ly9lbW9qaXBlZGlhLm9yZy8=">Unicode-Character<i class="fa fa-external-link-alt"></i></span></p></li>
 <li><p><span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RoZW1lLXNldHRpbmdzLw==">Themes<i class="fa fa-external-link-alt"></i></span></p></li>
 </ul>
+<h2 id="advance">Advance</h2>
+<ul>
+<li><p>Create a new blog: <code>pnpm hexo new _blog_name_</code></p>
+<ul>
+<li>It creates a <em>blog_name</em>.md file and <em>blog_name</em> sub folder in __posts_ folder</li>
+</ul></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
     <title>Using pre-trained CNN for shoeprint image retrieval</title>
     <url>/article/Shoeprint/</url>
-    <content><![CDATA[<p>The core is this algorithm is to employ the Normalized Cross Correlation (NCC) to compare the features of shoeprints extracted by using a pre-trained Convolutional Neural Network (CNN). There are no training process in this algorithm. The algorithm is as follows： <img src="/article/Shoeprint/img"  width="400"></p>
+    <content><![CDATA[<p>The core is this algorithm is to employ the Normalized Cross Correlation (NCC) to compare the features of shoeprints extracted by using a pre-trained Convolutional Neural Network (CNN). There are no training process in this algorithm. The algorithm is as follows： </p>
 <p>There are serval reasons/motivations that why The algorithm is developed is in this way. First, there are limited shoeprint images are public available, the dataset we mainly used is called <span class="exturl" data-url="aHR0cHM6Ly9maWQuZG1pLnVuaWJhcy5jaC8=">FID-300<i class="fa fa-external-link-alt"></i></span> that consists of ~ 1000 reference shoeprint and ~ 300 crime scene shoeprint. A reference shoeprint is a clean-full impression that are usually high-quality, while a crime scene shoeprint can be partial, distorted and taken under poor condition. I personally (subjectively) think It is difficult to train a general shoeprint image retrieval model with such a dataset with limited images. Second,A pre-trained CNN model effectively captures complex patterns and textures in shoeprints, essential for identifying unique characteristics like tread patterns and wear marks. Leveraging its training on diverse datasets, the model generalizes well to new data, enabling efficient and accurate feature extraction for shoeprint image retrieval.</p>
 <p>A CNN feature consists of three dimensions (<em>width</em> <span class="math inline">\(\times\)</span> <em>height</em> <span class="math inline">\(\times\)</span> <em>channel</em>) -- with <em>height</em> and <em>width</em> to be the dimension of the shoeprint images (usually smaller than original images as there will be pooling layers), and <em>channel</em> is the number of features. This can be found in the last layer in CNN that is used. For example, if we use the <em>Conv3_512</em> layer in the following VGG19 consists many CNN layers, then the <em>Channel</em> will be 512, and similar <em>Channel</em> = 128 if we used the <em>Conv3_128</em> as the last layer.</p>
 <p><img src="/article/Shoeprint/img"  width="400"></p>
