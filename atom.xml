@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>WenZhijian&#39;s Blog</title>
+  
+  <subtitle>整点薯条</subtitle>
+  <link href="https://yeamin1.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://yeamin1.github.io/"/>
+  <updated>2024-10-25T08:58:56.631Z</updated>
+  <id>https://yeamin1.github.io/</id>
+  
+  <author>
+    <name>Wen Zhijian</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Deep learning learning</title>
+    <link href="https://yeamin1.github.io/article/DeepLearning/"/>
+    <id>https://yeamin1.github.io/article/DeepLearning/</id>
+    <published>2023-06-04T16:00:00.000Z</published>
+    <updated>2024-10-25T08:58:56.631Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+      
+      
+    <summary type="html">
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
