@@ -6,7 +6,7 @@
   <link href="https://yeamin1.github.io/atom.xml" rel="self"/>
   
   <link href="https://yeamin1.github.io/"/>
-  <updated>2024-10-25T21:54:07.011Z</updated>
+  <updated>2024-10-27T01:16:51.566Z</updated>
   <id>https://yeamin1.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Modelling the refractive index measurement of glass by using Dirichletian Process Mixture Model (DPMM)</title>
+    <link href="https://yeamin1.github.io/article/glass/"/>
+    <id>https://yeamin1.github.io/article/glass/</id>
+    <published>2024-10-27T05:43:37.000Z</published>
+    <updated>2024-10-27T01:16:51.566Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="modelling-the-refractive-index-measurement-of-glass-by-using-dirichletian-process-mixture-model-dpmm">Modelling the refractive index measurement of glass by using Dirichletian Process Mixture Model (DPMM)</h1><h2 id="background">Background</h2><p>When glass is broken, some fragments of glass travel backwards and land on the surface of the breaker’s clothing or someone nearby. These tiny fragments may persist on the clothing for a period of time and finding them can be used as evidence of proximity. In forensic examinations, the physical properties of recovered glass fragments are measured and compared to glass collected from crime scenes. There are many physical characteristics, such as color, thickness and surface feature that we can use for discrimination. However, the recovered glass is usually tiny, hence these characteristics cannot be access reliably. The refractive index can still be measured for a small pieces of glass fragment hence it is widely used as evidence in the interpretation of glass.</p><p>When glass fragments are recovered from a suspect (recovered samples), and few broken window glass fragments is collected (control samples), the question often arise is that whether the recovered glass fragment is originated from the window glass. To do this, we can measure the RI of them, and compare these measurement. A refractive measurement is a ratio (number) that describe how the light bends when it travel through the material:</p><p><span class="math display">\[\text{RI} = \frac{\text{Speed of light travel in vacuum}}{\text{Speed of light travel in material}}\]</span></p><p>We can obtain the RI measurements of both the recovered samples and the control samples, and then conduct the a test, such as T-test and Welch-T test. They can quantify the weight of evidence of how similar/dissimilar of these two groups of samples of glass.</p><p>However, another question also might be asked is: how rare of the recovered glass. The reason of asking such a question is that: if the glass is rare, then we want to assign a higher evidential value because it is unlikely to be found in the general population; Conversely, we want the evidential value to be smaller if it is a common glass. This question needs to be address by conducting surveys of RI measurement of different sources of glass, and we can then model the distribution to obtain the point estimate for a glass fragment with a particular RI measurement. The modelling procedure can be conducted by using a histogram; However, a histogram may fit inconsistently as the choice of <code>bin-width</code> is arbitrary. Secondly, histogram is a discrete approach, hence there might be some region whether the estimated probability density is 0. -- This is because there are no observation fall in such a region. This 0 estimation may results the finial quantitation to be infinity therefore it is necessary to avoid this case. We solve this problem by using a Dirichletian Process Mixture Model (DPMM).</p><h2 id="method">Method</h2><ul><li>TBC</li></ul><h3 id="reference">Reference</h3><ul><li>Wen, Zhijian, et al. &quot;Bayesian mixture modelling for glass refractive index measurement.&quot; Science &amp; Justice 61.4 (2021): 345-355.</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;modelling-the-refractive-index-measurement-of-glass-by-using-dirichletian-process-mixture-model-dpmm&quot;&gt;Modelling the refractive index</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Using pre-trained CNN for shoeprint image retrieval</title>
