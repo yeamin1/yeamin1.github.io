@@ -31,19 +31,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Using pre-trained CNN for shoeprint image retrieval</title>
-    <url>/article/Shoeprint/</url>
-    <content><![CDATA[<p>The core is this algorithm is to employ the Normalized Cross Correlation (NCC) to compare the features of shoeprints extracted by using a pre-trained Convolutional Neural Network (CNN). There are no training process in this algorithm. The algorithm is as follows：</p>
-<p><img src="/article/Shoeprint/shoeprint_retrieval_algorithm.jpg"  width="400"></p>
-<p>There are serval reasons/motivations that why The algorithm is developed is in this way. First, there are limited shoeprint images are public available, the dataset we mainly used is called <span class="exturl" data-url="aHR0cHM6Ly9maWQuZG1pLnVuaWJhcy5jaC8=">FID-300<i class="fa fa-external-link-alt"></i></span> that consists of ~ 1000 reference shoeprint and ~ 300 crime scene shoeprint. A reference shoeprint is a clean-full impression that are usually high-quality, while a crime scene shoeprint can be partial, distorted and taken under poor condition. I personally (subjectively) think It is difficult to train a general shoeprint image retrieval model with such a dataset with limited images. Second,A pre-trained CNN model effectively captures complex patterns and textures in shoeprints, essential for identifying unique characteristics like tread patterns and wear marks. Leveraging its training on diverse datasets, the model generalizes well to new data, enabling efficient and accurate feature extraction for shoeprint image retrieval.</p>
-<p>A CNN feature consists of three dimensions (<em>width</em> <span class="math inline">\(\times\)</span> <em>height</em> <span class="math inline">\(\times\)</span> <em>channel</em>) -- with <em>height</em> and <em>width</em> to be the dimension of the shoeprint images (usually smaller than original images as there will be pooling layers), and <em>channel</em> is the number of features. This can be found in the last layer in CNN that is used. For example, if we use the <em>Conv3_512</em> layer in the following VGG19 consists many CNN layers, then the <em>Channel</em> will be 512, and similar <em>Channel</em> = 128 if we used the <em>Conv3_128</em> as the last layer.</p>
-<p><img src="/article/Shoeprint/cnn.jpg"  width="400"></p>
-<p>The image features of shoeprint images are then compared and summarized into a single score. The main challenge here is the the image feature is a 3D array, while NCC can only work with 2D images. Furthermore, there are some features are mostly blank -- all pixel intensities equal to 0. This will decrease the retrieval performance therefore it is good to eliminate then before the comparison process. We used the following equations to address these two problems:</p>
-<p><img src="/article/Shoeprint/eq_1.jpg"  width="250"> <img src="/article/Shoeprint/eq_2.jpg"  width="350"></p>
-<p>We conducted the experiment with the FID-300 dataset, The result achieves 82.0% accurate at the 1% cumulative matching probability, which is completive with other published algorithm.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Modelling the refractive index measurement of glass by using Dirichletian Process Mixture Model (DPMM)</title>
     <url>/article/glass/</url>
     <content><![CDATA[<h1 id="modelling-the-refractive-index-measurement-of-glass-by-using-dirichletian-process-mixture-model-dpmm">Modelling the refractive index measurement of glass by using Dirichletian Process Mixture Model (DPMM)</h1>
@@ -61,6 +48,19 @@
 <ul>
 <li>Wen, Zhijian, et al. &quot;Bayesian mixture modelling for glass refractive index measurement.&quot; Science &amp; Justice 61.4 (2021): 345-355.</li>
 </ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Using pre-trained CNN for shoeprint image retrieval</title>
+    <url>/article/Shoeprint/</url>
+    <content><![CDATA[<p>The core is this algorithm is to employ the Normalized Cross Correlation (NCC) to compare the features of shoeprints extracted by using a pre-trained Convolutional Neural Network (CNN). There are no training process in this algorithm. The algorithm is as follows：</p>
+<p><img src="/article/Shoeprint/shoeprint_retrieval_algorithm.jpg"  width="400"></p>
+<p>There are serval reasons/motivations that why The algorithm is developed is in this way. First, there are limited shoeprint images are public available, the dataset we mainly used is called <span class="exturl" data-url="aHR0cHM6Ly9maWQuZG1pLnVuaWJhcy5jaC8=">FID-300<i class="fa fa-external-link-alt"></i></span> that consists of ~ 1000 reference shoeprint and ~ 300 crime scene shoeprint. A reference shoeprint is a clean-full impression that are usually high-quality, while a crime scene shoeprint can be partial, distorted and taken under poor condition. I personally (subjectively) think It is difficult to train a general shoeprint image retrieval model with such a dataset with limited images. Second,A pre-trained CNN model effectively captures complex patterns and textures in shoeprints, essential for identifying unique characteristics like tread patterns and wear marks. Leveraging its training on diverse datasets, the model generalizes well to new data, enabling efficient and accurate feature extraction for shoeprint image retrieval.</p>
+<p>A CNN feature consists of three dimensions (<em>width</em> <span class="math inline">\(\times\)</span> <em>height</em> <span class="math inline">\(\times\)</span> <em>channel</em>) -- with <em>height</em> and <em>width</em> to be the dimension of the shoeprint images (usually smaller than original images as there will be pooling layers), and <em>channel</em> is the number of features. This can be found in the last layer in CNN that is used. For example, if we use the <em>Conv3_512</em> layer in the following VGG19 consists many CNN layers, then the <em>Channel</em> will be 512, and similar <em>Channel</em> = 128 if we used the <em>Conv3_128</em> as the last layer.</p>
+<p><img src="/article/Shoeprint/cnn.jpg"  width="400"></p>
+<p>The image features of shoeprint images are then compared and summarized into a single score. The main challenge here is the the image feature is a 3D array, while NCC can only work with 2D images. Furthermore, there are some features are mostly blank -- all pixel intensities equal to 0. This will decrease the retrieval performance therefore it is good to eliminate then before the comparison process. We used the following equations to address these two problems:</p>
+<p><img src="/article/Shoeprint/eq_1.jpg"  width="250"> <img src="/article/Shoeprint/eq_2.jpg"  width="350"></p>
+<p>We conducted the experiment with the FID-300 dataset, The result achieves 82.0% accurate at the 1% cumulative matching probability, which is completive with other published algorithm.</p>
 ]]></content>
   </entry>
 </search>
