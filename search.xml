@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Creating the first blog</title>
+    <url>/article/CBlog/</url>
+    <content><![CDATA[<h2 id="quick-start">Quick Start</h2>
+<ul>
+<li><p>Install NodeJS</p></li>
+<li><p><code>npm install -g pnpm</code></p></li>
+<li><p><code>pnpm i</code> install dependency</p></li>
+<li><p><code>npm hexo s</code> create localhost webpage</p></li>
+<li><p><code>pnpm hexo clean ; pnpm hexo deploy</code> Deployment</p>
+<ul>
+<li>github.io： Change <em>url:</em> in &quot;*/_config.yml&quot; to: https://yeamin1.github.io<br />
+</li>
+</ul></li>
+</ul>
+<h2 id="resource">Resource:</h2>
+<ul>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9lbW9qaXBlZGlhLm9yZy8=">Unicode-Character<i class="fa fa-external-link-alt"></i></span></p></li>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9mb250YXdlc29tZS5jb20vaWNvbnM=">FontAweIcons<i class="fa fa-external-link-alt"></i></span></p></li>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RoZW1lLXNldHRpbmdzLw==">Themes<i class="fa fa-external-link-alt"></i></span></p></li>
+</ul>
+<h2 id="advance">Advance</h2>
+<ul>
+<li><p>Create a new blog: <code>pnpm hexo new _blog_name_</code></p>
+<ul>
+<li>It creates a <em>blog_name</em>.md file and <em>blog_name</em> sub folder in __posts_ folder</li>
+</ul></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>Using pre-trained CNN for shoeprint image retrieval</title>
     <url>/article/Shoeprint/</url>
     <content><![CDATA[<p>The core is this algorithm is to employ the Normalized Cross Correlation (NCC) to compare the features of shoeprints extracted by using a pre-trained Convolutional Neural Network (CNN). There are no training process in this algorithm. The algorithm is as follows：</p>
@@ -30,36 +60,6 @@
 <h3 id="reference">Reference</h3>
 <ul>
 <li>Wen, Zhijian, et al. &quot;Bayesian mixture modelling for glass refractive index measurement.&quot; Science &amp; Justice 61.4 (2021): 345-355.</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>Creating the first blog</title>
-    <url>/article/CBlog/</url>
-    <content><![CDATA[<h2 id="quick-start">Quick Start</h2>
-<ul>
-<li><p>Install NodeJS</p></li>
-<li><p><code>npm install -g pnpm</code></p></li>
-<li><p><code>pnpm i</code> install dependency</p></li>
-<li><p><code>npm hexo s</code> create localhost webpage</p></li>
-<li><p><code>pnpm hexo clean ; pnpm hexo deploy</code> Deployment</p>
-<ul>
-<li>github.io： Change <em>url:</em> in &quot;*/_config.yml&quot; to: https://yeamin1.github.io<br />
-</li>
-</ul></li>
-</ul>
-<h2 id="resource">Resource:</h2>
-<ul>
-<li><p><span class="exturl" data-url="aHR0cHM6Ly9lbW9qaXBlZGlhLm9yZy8=">Unicode-Character<i class="fa fa-external-link-alt"></i></span></p></li>
-<li><p><span class="exturl" data-url="aHR0cHM6Ly9mb250YXdlc29tZS5jb20vaWNvbnM=">FontAweIcons<i class="fa fa-external-link-alt"></i></span></p></li>
-<li><p><span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL3RoZW1lLXNldHRpbmdzLw==">Themes<i class="fa fa-external-link-alt"></i></span></p></li>
-</ul>
-<h2 id="advance">Advance</h2>
-<ul>
-<li><p>Create a new blog: <code>pnpm hexo new _blog_name_</code></p>
-<ul>
-<li>It creates a <em>blog_name</em>.md file and <em>blog_name</em> sub folder in __posts_ folder</li>
-</ul></li>
 </ul>
 ]]></content>
   </entry>
